@@ -34,12 +34,21 @@ bool IsFileExist( const char *cFileName )
 
 bool CreateFile( const char *cFileName )
 {
+/*
   int fd = open(cFileName, O_CREAT | O_RDWR, 0600 );
 
   if( fd < 0 ){
     return false;
   }
   close(fd);
+*/
+  FILE* fp = fopen( cFileName, "wb" );
+
+  if( fp == NULL ){
+    return false;
+  }
+  fclose( fp );
+    
   return true;
 }
 
