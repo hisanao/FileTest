@@ -133,7 +133,7 @@ fp = NULL;
 // dummy Code for CrackProof
 //================================================================================
 
-
+/*
 #define dummy_data_0x10 __asm__ __volatile__ (".long 0x00"); __asm__ __volatile__ (".long 0x00"); __asm__ __volatile__ (".long 0x00"); __asm__ __volatile__ (".long 0x00");
 
 #define dummy_data_0x100 \
@@ -170,7 +170,7 @@ JNIEXPORT int JNICALL Java_filetest_casualdrive_com_filetest_MainActivity_DummyJ
 
   return 0;
 }
-
+*/
 
 
 
