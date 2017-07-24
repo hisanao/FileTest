@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        KenjaSample {
-            keyAlias 'kenjasample'
-            keyPassword 'KenjaSample'
-            storeFile file('D:/unity/KenjaSample/KenjaSample/KenjaSample.keystore')
-            storePassword 'KenjaSample'
-        }
-    }
+//    signingConfigs {
+//        KenjaSample {
+//            keyAlias 'kenjasample'
+//            keyPassword 'KenjaSample'
+//            storeFile file('./KenjaSample.keystore')
+//            storePassword 'KenjaSample'
+//        }
+//    }
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
@@ -31,7 +31,7 @@ android {
     }
     buildTypes {
         release {
-            signingConfig signingConfigs.KenjaSample
+//            signingConfig signingConfigs.KenjaSample
         }
     }
     externalNativeBuild {
